@@ -3,10 +3,17 @@ variable "cidr_block" {
     default = "10.1.0.0/16"
 }     
 
-variable "vpc_tags" {
+variable "vpc_function_tags" {
     type = map 
     default = {
         Name = "Roboshop_VPC"
+    }
+}
+
+variable "igw_function_tags" {
+    type = map 
+    default = {
+        Name = "Roboshop_IGW"
     }
 }
 
