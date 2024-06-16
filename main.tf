@@ -12,4 +12,5 @@ module "vpc_project" {
     public_cidr_subnets = var.public_cidr_subnets
     private_cidr_subnets = var.private_cidr_subnets
     database_cidr_subnets = var.database_cidr_subnets
+    is_peering_required = var.is_peering_required
 }

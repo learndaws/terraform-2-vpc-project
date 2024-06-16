@@ -71,3 +71,7 @@ variable "database_cidr_subnets" {
     default = ["10.1.21.0/24", "10.1.22.0/24"]
 }
 
+variable "is_peering_required" {
+    type = bool 
+    default = "true"
+}
