@@ -1,5 +1,6 @@
 module "vpc_project" {
-    source = "../terraform-2-vpc-developer"
+    #source = "../terraform-2-vpc-developer"
+    source = "git::https://github.com/learndaws/terraform-2-vpc-developer.git?ref=main"
     vpc_function_tags = var.vpc_function_tags
     igw_function_tags = var.igw_function_tags    
     public_subnet_function_tags = var.public_subnet_function_tags
